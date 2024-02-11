@@ -10,11 +10,19 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: const CustomAppBar(
-        title: 'Notes',
-        icon: Icons.search_rounded,
+      body: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 16),
+        child: Column(
+          children: [
+            CustomAppBar(
+              title: 'Notes',
+              icon: Icons.search_rounded,
+              onPressed: () {},
+            ),
+            const Expanded(child: ListViewNotesBody()),
+          ],
+        ),
       ),
-      body: const ListViewNotesBody(),
       floatingActionButton: FloatingActionButton(
         backgroundColor: MyColors.kPrimaryColor,
         onPressed: () {

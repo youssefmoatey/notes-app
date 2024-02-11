@@ -20,7 +20,7 @@ class AddNotesView extends StatelessWidget {
           ),
           const CustomTextFormField(hintText: 'Title'),
           SizedBox(
-            height: 12.h,
+            height: 16.h,
           ),
           const CustomTextFormField(
             hintText: 'Content',

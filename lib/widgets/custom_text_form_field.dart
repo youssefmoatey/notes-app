@@ -6,14 +6,16 @@ import '../helper/helper_methods.dart';
 class CustomTextFormField extends StatelessWidget {
   const CustomTextFormField({
     super.key,
-    required this.hintText, this.maxLines = 1,
+    required this.hintText,
+    this.maxLines = 1,
   });
   final String hintText;
-  final int? maxLines ;
+  final int? maxLines;
 
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      cursorColor: MyColors.kPrimaryColor,
       maxLines: maxLines,
       decoration: InputDecoration(
         border: const OutlineInputBorder(

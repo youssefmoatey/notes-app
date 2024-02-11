@@ -1,16 +1,17 @@
 import 'package:flutter/material.dart';
 
-class SearchIcon extends StatelessWidget {
-  const SearchIcon({
+class AppBarIcon extends StatelessWidget {
+  const AppBarIcon({
     super.key,
-    required this.icon,
+    required this.icon, this.onPressed,
   });
   final IconData icon;
+  final void Function()? onPressed;
 
   @override
   Widget build(BuildContext context) {
     return IconButton(
-      onPressed: () {},
+      onPressed: onPressed,
       icon: Container(
           decoration: BoxDecoration(
               color: const Color(0xFF3C3B3C),
