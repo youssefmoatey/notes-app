@@ -27,7 +27,7 @@ class AddNotesView extends StatelessWidget {
             maxLines: 4,
           ),
           SizedBox(
-            height: MediaQuery.of(context).size.height / 7,
+            height: MediaQuery.of(context).size.height / 8,
           ),
           const CustomButton(),
         ],
